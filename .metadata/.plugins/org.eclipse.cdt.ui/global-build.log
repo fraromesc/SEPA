@@ -1,0 +1,919 @@
+
+**** Build of configuration Debug for project p1 ****
+
+"C:\\ti\\ccs1200\\ccs\\utils\\bin\\gmake" -k -j 12 all -O 
+ 
+Building file: "../main.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-arm_20.2.6.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/Users/jwyx/OneDrive/Escritorio/SEPA/practicas/p1" --include_path="C:/Users/jwyx/OneDrive/Escritorio/SEPA/TivaWare_C_Series-2.1.3.156" --include_path="C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-arm_20.2.6.LTS/include" --define=ccs="ccs" --define=PART_TM4C1294NCPDT -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+Finished building: "../main.c"
+ 
+Building file: "../tm4c1294ncpdt_startup_ccs.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-arm_20.2.6.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/Users/jwyx/OneDrive/Escritorio/SEPA/practicas/p1" --include_path="C:/Users/jwyx/OneDrive/Escritorio/SEPA/TivaWare_C_Series-2.1.3.156" --include_path="C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-arm_20.2.6.LTS/include" --define=ccs="ccs" --define=PART_TM4C1294NCPDT -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="tm4c1294ncpdt_startup_ccs.d_raw"  "../tm4c1294ncpdt_startup_ccs.c"
+Finished building: "../tm4c1294ncpdt_startup_ccs.c"
+ 
+Building file: "../EJEMPLO2_1819.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-arm_20.2.6.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/Users/jwyx/OneDrive/Escritorio/SEPA/practicas/p1" --include_path="C:/Users/jwyx/OneDrive/Escritorio/SEPA/TivaWare_C_Series-2.1.3.156" --include_path="C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-arm_20.2.6.LTS/include" --define=ccs="ccs" --define=PART_TM4C1294NCPDT -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="EJEMPLO2_1819.d_raw"  "../EJEMPLO2_1819.c"
+Finished building: "../EJEMPLO2_1819.c"
+ 
+Building target: "p1.out"
+Invoking: Arm Linker
+"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-arm_20.2.6.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C1294NCPDT -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"p1.map" --heap_size=0 --stack_size=4096 -i"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-arm_20.2.6.LTS/lib" -i"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-arm_20.2.6.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="p1_linkInfo.xml" --rom_model -o "p1.out" "./EJEMPLO2_1819.obj" "./main.obj" "./tm4c1294ncpdt_startup_ccs.obj" "C:/Users/jwyx/OneDrive/Escritorio/SEPA/TivaWare_C_Series-2.1.3.156/driverlib/ccs/Debug/driverlib.lib" "../tm4c1294ncpdt.cmd"  -llibc.a 
+<Linking>
+error #10056: symbol "main" redefined: first defined in "./EJEMPLO2_1819.obj"; redefined in "./main.obj"
+error #10010: errors encountered during linking; "p1.out" not built
+ 
+gmake[1]: *** [p1.out] Error 1
+>> Compilation failure
+makefile:144: recipe for target 'p1.out' failed
+gmake: *** [all] Error 2
+makefile:140: recipe for target 'all' failed
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project p1 ****
+
+"C:\\ti\\ccs1200\\ccs\\utils\\bin\\gmake" -k -j 12 all -O 
+ 
+Building target: "p1.out"
+Invoking: Arm Linker
+"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-arm_20.2.6.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C1294NCPDT -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"p1.map" --heap_size=0 --stack_size=4096 -i"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-arm_20.2.6.LTS/lib" -i"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-arm_20.2.6.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="p1_linkInfo.xml" --rom_model -o "p1.out" "./EJEMPLO2_1819.obj" "./main.obj" "./tm4c1294ncpdt_startup_ccs.obj" "C:/Users/jwyx/OneDrive/Escritorio/SEPA/TivaWare_C_Series-2.1.3.156/driverlib/ccs/Debug/driverlib.lib" "../tm4c1294ncpdt.cmd"  -llibc.a 
+<Linking>
+error #10056: symbol "main" redefined: first defined in "./EJEMPLO2_1819.obj"; redefined in "./main.obj"
+error #10010: errors encountered during linking; "p1.out" not built
+ 
+>> Compilation failure
+makefile:144: recipe for target 'p1.out' failed
+gmake[1]: *** [p1.out] Error 1
+makefile:140: recipe for target 'all' failed
+gmake: *** [all] Error 2
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project p1 ****
+
+"C:\\ti\\ccs1200\\ccs\\utils\\bin\\gmake" -k -j 12 all -O 
+ 
+Building target: "p1.out"
+Invoking: Arm Linker
+"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-arm_20.2.6.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C1294NCPDT -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"p1.map" --heap_size=0 --stack_size=4096 -i"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-arm_20.2.6.LTS/lib" -i"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-arm_20.2.6.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="p1_linkInfo.xml" --rom_model -o "p1.out" "./EJEMPLO2_1819.obj" "./main.obj" "./tm4c1294ncpdt_startup_ccs.obj" "C:/Users/jwyx/OneDrive/Escritorio/SEPA/TivaWare_C_Series-2.1.3.156/driverlib/ccs/Debug/driverlib.lib" "../tm4c1294ncpdt.cmd"  -llibc.a 
+<Linking>
+error #10056: symbol "main" redefined: first defined in "./EJEMPLO2_1819.obj"; redefined in "./main.obj"
+error #10010: errors encountered during linking; "p1.out" not built
+ 
+gmake[1]: *** [p1.out] Error 1
+>> Compilation failure
+makefile:144: recipe for target 'p1.out' failed
+gmake: *** [all] Error 2
+makefile:140: recipe for target 'all' failed
+
+**** Build Finished ****
+
+**** Clean-only build of configuration Debug for project p1 ****
+
+"C:\\ti\\ccs1200\\ccs\\utils\\bin\\gmake" -k -j 12 clean -O 
+ 
+DEL /F  "p1.hex"  "p1.out" 
+DEL /F "EJEMPLO2_1819.obj" "main.obj" "tm4c1294ncpdt_startup_ccs.obj" 
+DEL /F "EJEMPLO2_1819.d" "main.d" "tm4c1294ncpdt_startup_ccs.d" 
+Could Not Find C:\Users\jwyx\OneDrive\Escritorio\SEPA\practicas\p1\Debug\p1.hex
+Finished clean
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project p1 ****
+
+"C:\\ti\\ccs1200\\ccs\\utils\\bin\\gmake" -k -j 12 all -O 
+ 
+Building file: "../tm4c1294ncpdt_startup_ccs.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-arm_20.2.6.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/Users/jwyx/OneDrive/Escritorio/SEPA/practicas/p1" --include_path="C:/Users/jwyx/OneDrive/Escritorio/SEPA/TivaWare_C_Series-2.1.3.156" --include_path="C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-arm_20.2.6.LTS/include" --define=ccs="ccs" --define=PART_TM4C1294NCPDT -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="tm4c1294ncpdt_startup_ccs.d_raw"  "../tm4c1294ncpdt_startup_ccs.c"
+Finished building: "../tm4c1294ncpdt_startup_ccs.c"
+ 
+Building file: "../EJEMPLO2_1819.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-arm_20.2.6.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/Users/jwyx/OneDrive/Escritorio/SEPA/practicas/p1" --include_path="C:/Users/jwyx/OneDrive/Escritorio/SEPA/TivaWare_C_Series-2.1.3.156" --include_path="C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-arm_20.2.6.LTS/include" --define=ccs="ccs" --define=PART_TM4C1294NCPDT -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="EJEMPLO2_1819.d_raw"  "../EJEMPLO2_1819.c"
+Finished building: "../EJEMPLO2_1819.c"
+ 
+Building target: "p1.out"
+Invoking: Arm Linker
+"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-arm_20.2.6.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C1294NCPDT -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"p1.map" --heap_size=0 --stack_size=4096 -i"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-arm_20.2.6.LTS/lib" -i"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-arm_20.2.6.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="p1_linkInfo.xml" --rom_model -o "p1.out" "./EJEMPLO2_1819.obj" "./tm4c1294ncpdt_startup_ccs.obj" "C:/Users/jwyx/OneDrive/Escritorio/SEPA/TivaWare_C_Series-2.1.3.156/driverlib/ccs/Debug/driverlib.lib" "../tm4c1294ncpdt.cmd"  -llibc.a 
+<Linking>
+Finished building target: "p1.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project p1 ****
+
+"C:\\ti\\ccs1200\\ccs\\utils\\bin\\gmake" -k -j 12 all -O 
+ 
+gmake[1]: 'p1.out' is up to date.
+
+**** Build Finished ****
+
+**** Clean-only build of configuration Debug for project p1 ****
+
+"C:\\ti\\ccs1200\\ccs\\utils\\bin\\gmake" -k -j 12 clean -O 
+ 
+DEL /F  "p1.hex"  "p1.out" 
+DEL /F "EJEMPLO2_1819.obj" "tm4c1294ncpdt_startup_ccs.obj" 
+DEL /F "EJEMPLO2_1819.d" "tm4c1294ncpdt_startup_ccs.d" 
+Finished clean
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project p1 ****
+
+"C:\\ti\\ccs1200\\ccs\\utils\\bin\\gmake" -k -j 12 all -O 
+ 
+Building file: "../tm4c1294ncpdt_startup_ccs.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-arm_20.2.6.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/Users/jwyx/OneDrive/Escritorio/SEPA/practicas/p1" --include_path="C:/Users/jwyx/OneDrive/Escritorio/SEPA/TivaWare_C_Series-2.1.3.156" --include_path="C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-arm_20.2.6.LTS/include" --define=ccs="ccs" --define=PART_TM4C1294NCPDT -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="tm4c1294ncpdt_startup_ccs.d_raw"  "../tm4c1294ncpdt_startup_ccs.c"
+Finished building: "../tm4c1294ncpdt_startup_ccs.c"
+ 
+Building file: "../ejercicio1.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-arm_20.2.6.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/Users/jwyx/OneDrive/Escritorio/SEPA/practicas/p1" --include_path="C:/Users/jwyx/OneDrive/Escritorio/SEPA/TivaWare_C_Series-2.1.3.156" --include_path="C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-arm_20.2.6.LTS/include" --define=ccs="ccs" --define=PART_TM4C1294NCPDT -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="ejercicio1.d_raw"  "../ejercicio1.c"
+ 
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'ejercicio1.obj' failed
+"../ejercicio1.c", line 29: warning #1238-D: excess initializers are ignored
+"../ejercicio1.c", line 129: warning #176-D: expression has no effect
+At end of source: error #68: expected a "}"
+1 error detected in the compilation of "../ejercicio1.c".
+gmake: *** [ejercicio1.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project p1 ****
+
+"C:\\ti\\ccs1200\\ccs\\utils\\bin\\gmake" -k -j 12 all -O 
+ 
+Building file: "../ejercicio1.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-arm_20.2.6.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/Users/jwyx/OneDrive/Escritorio/SEPA/practicas/p1" --include_path="C:/Users/jwyx/OneDrive/Escritorio/SEPA/TivaWare_C_Series-2.1.3.156" --include_path="C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-arm_20.2.6.LTS/include" --define=ccs="ccs" --define=PART_TM4C1294NCPDT -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="ejercicio1.d_raw"  "../ejercicio1.c"
+ 
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'ejercicio1.obj' failed
+"../ejercicio1.c", line 29: warning #1238-D: excess initializers are ignored
+"../ejercicio1.c", line 129: warning #176-D: expression has no effect
+At end of source: error #68: expected a "}"
+1 error detected in the compilation of "../ejercicio1.c".
+gmake: *** [ejercicio1.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project p1 ****
+
+"C:\\ti\\ccs1200\\ccs\\utils\\bin\\gmake" -k -j 12 all -O 
+ 
+Building file: "../ejercicio1.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-arm_20.2.6.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/Users/jwyx/OneDrive/Escritorio/SEPA/practicas/p1" --include_path="C:/Users/jwyx/OneDrive/Escritorio/SEPA/TivaWare_C_Series-2.1.3.156" --include_path="C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-arm_20.2.6.LTS/include" --define=ccs="ccs" --define=PART_TM4C1294NCPDT -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="ejercicio1.d_raw"  "../ejercicio1.c"
+ 
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'ejercicio1.obj' failed
+"../ejercicio1.c", line 29: warning #1238-D: excess initializers are ignored
+"../ejercicio1.c", line 129: warning #176-D: expression has no effect
+At end of source: error #68: expected a "}"
+1 error detected in the compilation of "../ejercicio1.c".
+gmake: *** [ejercicio1.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project p1 ****
+
+"C:\\ti\\ccs1200\\ccs\\utils\\bin\\gmake" -k -j 12 all -O 
+ 
+Building file: "../ejercicio1.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-arm_20.2.6.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/Users/jwyx/OneDrive/Escritorio/SEPA/practicas/p1" --include_path="C:/Users/jwyx/OneDrive/Escritorio/SEPA/TivaWare_C_Series-2.1.3.156" --include_path="C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-arm_20.2.6.LTS/include" --define=ccs="ccs" --define=PART_TM4C1294NCPDT -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="ejercicio1.d_raw"  "../ejercicio1.c"
+ 
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'ejercicio1.obj' failed
+"../ejercicio1.c", line 29: warning #1238-D: excess initializers are ignored
+"../ejercicio1.c", line 129: warning #176-D: expression has no effect
+At end of source: error #68: expected a "}"
+1 error detected in the compilation of "../ejercicio1.c".
+gmake: *** [ejercicio1.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project p1 ****
+
+"C:\\ti\\ccs1200\\ccs\\utils\\bin\\gmake" -k -j 12 all -O 
+ 
+Building file: "../ejercicio1.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-arm_20.2.6.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/Users/jwyx/OneDrive/Escritorio/SEPA/practicas/p1" --include_path="C:/Users/jwyx/OneDrive/Escritorio/SEPA/TivaWare_C_Series-2.1.3.156" --include_path="C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-arm_20.2.6.LTS/include" --define=ccs="ccs" --define=PART_TM4C1294NCPDT -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="ejercicio1.d_raw"  "../ejercicio1.c"
+"../ejercicio1.c", line 29: warning #1238-D: excess initializers are ignored
+"../ejercicio1.c", line 129: warning #176-D: expression has no effect
+Finished building: "../ejercicio1.c"
+ 
+Building target: "p1.out"
+Invoking: Arm Linker
+"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-arm_20.2.6.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C1294NCPDT -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"p1.map" --heap_size=0 --stack_size=4096 -i"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-arm_20.2.6.LTS/lib" -i"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-arm_20.2.6.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="p1_linkInfo.xml" --rom_model -o "p1.out" "./ejercicio1.obj" "./tm4c1294ncpdt_startup_ccs.obj" "C:/Users/jwyx/OneDrive/Escritorio/SEPA/TivaWare_C_Series-2.1.3.156/driverlib/ccs/Debug/driverlib.lib" "../tm4c1294ncpdt.cmd"  -llibc.a 
+<Linking>
+Finished building target: "p1.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project p1 ****
+
+"C:\\ti\\ccs1200\\ccs\\utils\\bin\\gmake" -k -j 12 all -O 
+ 
+gmake[1]: 'p1.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project p1 ****
+
+"C:\\ti\\ccs1200\\ccs\\utils\\bin\\gmake" -k -j 12 all -O 
+ 
+Building file: "../ejercicio1.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-arm_20.2.6.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/Users/jwyx/OneDrive/Escritorio/SEPA/practicas/p1" --include_path="C:/Users/jwyx/OneDrive/Escritorio/SEPA/TivaWare_C_Series-2.1.3.156" --include_path="C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-arm_20.2.6.LTS/include" --define=ccs="ccs" --define=PART_TM4C1294NCPDT -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="ejercicio1.d_raw"  "../ejercicio1.c"
+ 
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'ejercicio1.obj' failed
+"../ejercicio1.c", line 29: warning #1238-D: excess initializers are ignored
+"../ejercicio1.c", line 77: error #20: identifier "GPI0_PIN1" is undefined
+"../ejercicio1.c", line 129: warning #176-D: expression has no effect
+1 error detected in the compilation of "../ejercicio1.c".
+gmake: *** [ejercicio1.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project p1 ****
+
+"C:\\ti\\ccs1200\\ccs\\utils\\bin\\gmake" -k -j 12 all -O 
+ 
+Building file: "../ejercicio1.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-arm_20.2.6.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/Users/jwyx/OneDrive/Escritorio/SEPA/practicas/p1" --include_path="C:/Users/jwyx/OneDrive/Escritorio/SEPA/TivaWare_C_Series-2.1.3.156" --include_path="C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-arm_20.2.6.LTS/include" --define=ccs="ccs" --define=PART_TM4C1294NCPDT -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="ejercicio1.d_raw"  "../ejercicio1.c"
+ 
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'ejercicio1.obj' failed
+"../ejercicio1.c", line 29: warning #1238-D: excess initializers are ignored
+"../ejercicio1.c", line 77: error #20: identifier "GPI0_PIN_1" is undefined
+"../ejercicio1.c", line 129: warning #176-D: expression has no effect
+1 error detected in the compilation of "../ejercicio1.c".
+gmake: *** [ejercicio1.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project p1 ****
+
+"C:\\ti\\ccs1200\\ccs\\utils\\bin\\gmake" -k -j 12 all -O 
+ 
+Building file: "../ejercicio1.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-arm_20.2.6.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/Users/jwyx/OneDrive/Escritorio/SEPA/practicas/p1" --include_path="C:/Users/jwyx/OneDrive/Escritorio/SEPA/TivaWare_C_Series-2.1.3.156" --include_path="C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-arm_20.2.6.LTS/include" --define=ccs="ccs" --define=PART_TM4C1294NCPDT -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="ejercicio1.d_raw"  "../ejercicio1.c"
+"../ejercicio1.c", line 29: warning #1238-D: excess initializers are ignored
+"../ejercicio1.c", line 129: warning #176-D: expression has no effect
+Finished building: "../ejercicio1.c"
+ 
+Building target: "p1.out"
+Invoking: Arm Linker
+"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-arm_20.2.6.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C1294NCPDT -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"p1.map" --heap_size=0 --stack_size=4096 -i"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-arm_20.2.6.LTS/lib" -i"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-arm_20.2.6.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="p1_linkInfo.xml" --rom_model -o "p1.out" "./ejercicio1.obj" "./tm4c1294ncpdt_startup_ccs.obj" "C:/Users/jwyx/OneDrive/Escritorio/SEPA/TivaWare_C_Series-2.1.3.156/driverlib/ccs/Debug/driverlib.lib" "../tm4c1294ncpdt.cmd"  -llibc.a 
+<Linking>
+Finished building target: "p1.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project p1 ****
+
+"C:\\ti\\ccs1200\\ccs\\utils\\bin\\gmake" -k -j 12 all -O 
+ 
+gmake[1]: 'p1.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project p1 ****
+
+"C:\\ti\\ccs1200\\ccs\\utils\\bin\\gmake" -k -j 12 all -O 
+ 
+Building file: "../ejercicio1.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-arm_20.2.6.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/Users/jwyx/OneDrive/Escritorio/SEPA/practicas/p1" --include_path="C:/Users/jwyx/OneDrive/Escritorio/SEPA/TivaWare_C_Series-2.1.3.156" --include_path="C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-arm_20.2.6.LTS/include" --define=ccs="ccs" --define=PART_TM4C1294NCPDT -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="ejercicio1.d_raw"  "../ejercicio1.c"
+"../ejercicio1.c", line 29: warning #1238-D: excess initializers are ignored
+"../ejercicio1.c", line 129: warning #176-D: expression has no effect
+Finished building: "../ejercicio1.c"
+ 
+Building target: "p1.out"
+Invoking: Arm Linker
+"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-arm_20.2.6.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C1294NCPDT -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"p1.map" --heap_size=0 --stack_size=4096 -i"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-arm_20.2.6.LTS/lib" -i"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-arm_20.2.6.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="p1_linkInfo.xml" --rom_model -o "p1.out" "./ejercicio1.obj" "./tm4c1294ncpdt_startup_ccs.obj" "C:/Users/jwyx/OneDrive/Escritorio/SEPA/TivaWare_C_Series-2.1.3.156/driverlib/ccs/Debug/driverlib.lib" "../tm4c1294ncpdt.cmd"  -llibc.a 
+<Linking>
+Finished building target: "p1.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project p1 ****
+
+"C:\\ti\\ccs1200\\ccs\\utils\\bin\\gmake" -k -j 12 all -O 
+ 
+gmake[1]: 'p1.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project p1 ****
+
+"C:\\ti\\ccs1200\\ccs\\utils\\bin\\gmake" -k -j 12 all -O 
+ 
+Building file: "../ejercicio1.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-arm_20.2.6.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/Users/jwyx/OneDrive/Escritorio/SEPA/practicas/p1" --include_path="C:/Users/jwyx/OneDrive/Escritorio/SEPA/TivaWare_C_Series-2.1.3.156" --include_path="C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-arm_20.2.6.LTS/include" --define=ccs="ccs" --define=PART_TM4C1294NCPDT -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="ejercicio1.d_raw"  "../ejercicio1.c"
+"../ejercicio1.c", line 29: warning #1238-D: excess initializers are ignored
+"../ejercicio1.c", line 129: warning #176-D: expression has no effect
+Finished building: "../ejercicio1.c"
+ 
+Building target: "p1.out"
+Invoking: Arm Linker
+"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-arm_20.2.6.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C1294NCPDT -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"p1.map" --heap_size=0 --stack_size=4096 -i"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-arm_20.2.6.LTS/lib" -i"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-arm_20.2.6.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="p1_linkInfo.xml" --rom_model -o "p1.out" "./ejercicio1.obj" "./tm4c1294ncpdt_startup_ccs.obj" "C:/Users/jwyx/OneDrive/Escritorio/SEPA/TivaWare_C_Series-2.1.3.156/driverlib/ccs/Debug/driverlib.lib" "../tm4c1294ncpdt.cmd"  -llibc.a 
+<Linking>
+Finished building target: "p1.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project p1 ****
+
+"C:\\ti\\ccs1200\\ccs\\utils\\bin\\gmake" -k -j 12 all -O 
+ 
+gmake[1]: 'p1.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project p1 ****
+
+"C:\\ti\\ccs1200\\ccs\\utils\\bin\\gmake" -k -j 12 all -O 
+ 
+Building file: "../ejercicio1.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-arm_20.2.6.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/Users/jwyx/OneDrive/Escritorio/SEPA/practicas/p1" --include_path="C:/Users/jwyx/OneDrive/Escritorio/SEPA/TivaWare_C_Series-2.1.3.156" --include_path="C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-arm_20.2.6.LTS/include" --define=ccs="ccs" --define=PART_TM4C1294NCPDT -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="ejercicio1.d_raw"  "../ejercicio1.c"
+"../ejercicio1.c", line 29: warning #1238-D: excess initializers are ignored
+"../ejercicio1.c", line 129: warning #176-D: expression has no effect
+Finished building: "../ejercicio1.c"
+ 
+Building target: "p1.out"
+Invoking: Arm Linker
+"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-arm_20.2.6.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C1294NCPDT -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"p1.map" --heap_size=0 --stack_size=4096 -i"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-arm_20.2.6.LTS/lib" -i"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-arm_20.2.6.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="p1_linkInfo.xml" --rom_model -o "p1.out" "./ejercicio1.obj" "./tm4c1294ncpdt_startup_ccs.obj" "C:/Users/jwyx/OneDrive/Escritorio/SEPA/TivaWare_C_Series-2.1.3.156/driverlib/ccs/Debug/driverlib.lib" "../tm4c1294ncpdt.cmd"  -llibc.a 
+<Linking>
+Finished building target: "p1.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project p1 ****
+
+"C:\\ti\\ccs1200\\ccs\\utils\\bin\\gmake" -k -j 12 all -O 
+ 
+gmake[1]: 'p1.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project p1 ****
+
+"C:\\ti\\ccs1200\\ccs\\utils\\bin\\gmake" -k -j 12 all -O 
+ 
+Building file: "../ejercicio1.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-arm_20.2.6.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/Users/jwyx/OneDrive/Escritorio/SEPA/practicas/p1" --include_path="C:/Users/jwyx/OneDrive/Escritorio/SEPA/TivaWare_C_Series-2.1.3.156" --include_path="C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-arm_20.2.6.LTS/include" --define=ccs="ccs" --define=PART_TM4C1294NCPDT -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="ejercicio1.d_raw"  "../ejercicio1.c"
+ 
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'ejercicio1.obj' failed
+"../ejercicio1.c", line 28: error #171: expected a declaration
+"../ejercicio1.c", line 123: warning #176-D: expression has no effect
+1 error detected in the compilation of "../ejercicio1.c".
+gmake: *** [ejercicio1.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project p1 ****
+
+"C:\\ti\\ccs1200\\ccs\\utils\\bin\\gmake" -k -j 12 all -O 
+ 
+Building file: "../ejercicio1.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-arm_20.2.6.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/Users/jwyx/OneDrive/Escritorio/SEPA/practicas/p1" --include_path="C:/Users/jwyx/OneDrive/Escritorio/SEPA/TivaWare_C_Series-2.1.3.156" --include_path="C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-arm_20.2.6.LTS/include" --define=ccs="ccs" --define=PART_TM4C1294NCPDT -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="ejercicio1.d_raw"  "../ejercicio1.c"
+ 
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'ejercicio1.obj' failed
+"../ejercicio1.c", line 28: error #171: expected a declaration
+"../ejercicio1.c", line 123: warning #176-D: expression has no effect
+1 error detected in the compilation of "../ejercicio1.c".
+gmake: *** [ejercicio1.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project p1 ****
+
+"C:\\ti\\ccs1200\\ccs\\utils\\bin\\gmake" -k -j 12 all -O 
+ 
+Building file: "../ejercicio1.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-arm_20.2.6.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/Users/jwyx/OneDrive/Escritorio/SEPA/practicas/p1" --include_path="C:/Users/jwyx/OneDrive/Escritorio/SEPA/TivaWare_C_Series-2.1.3.156" --include_path="C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-arm_20.2.6.LTS/include" --define=ccs="ccs" --define=PART_TM4C1294NCPDT -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="ejercicio1.d_raw"  "../ejercicio1.c"
+ 
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'ejercicio1.obj' failed
+"../ejercicio1.c", line 28: error #171: expected a declaration
+"../ejercicio1.c", line 123: warning #176-D: expression has no effect
+1 error detected in the compilation of "../ejercicio1.c".
+gmake: *** [ejercicio1.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project p1 ****
+
+"C:\\ti\\ccs1200\\ccs\\utils\\bin\\gmake" -k -j 12 all -O 
+ 
+Building file: "../ejercicio1.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-arm_20.2.6.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/Users/jwyx/OneDrive/Escritorio/SEPA/practicas/p1" --include_path="C:/Users/jwyx/OneDrive/Escritorio/SEPA/TivaWare_C_Series-2.1.3.156" --include_path="C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-arm_20.2.6.LTS/include" --define=ccs="ccs" --define=PART_TM4C1294NCPDT -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="ejercicio1.d_raw"  "../ejercicio1.c"
+"../ejercicio1.c", line 123: warning #176-D: expression has no effect
+Finished building: "../ejercicio1.c"
+ 
+Building target: "p1.out"
+Invoking: Arm Linker
+"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-arm_20.2.6.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C1294NCPDT -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"p1.map" --heap_size=0 --stack_size=4096 -i"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-arm_20.2.6.LTS/lib" -i"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-arm_20.2.6.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="p1_linkInfo.xml" --rom_model -o "p1.out" "./ejercicio1.obj" "./tm4c1294ncpdt_startup_ccs.obj" "C:/Users/jwyx/OneDrive/Escritorio/SEPA/TivaWare_C_Series-2.1.3.156/driverlib/ccs/Debug/driverlib.lib" "../tm4c1294ncpdt.cmd"  -llibc.a 
+<Linking>
+Finished building target: "p1.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project p1 ****
+
+"C:\\ti\\ccs1200\\ccs\\utils\\bin\\gmake" -k -j 12 all -O 
+ 
+gmake[1]: 'p1.out' is up to date.
+
+**** Build Finished ****
+
+**** Clean-only build of configuration Debug for project p1 ****
+
+"C:\\ti\\ccs1200\\ccs\\utils\\bin\\gmake" -k -j 12 clean -O 
+ 
+DEL /F  "p1.hex"  "p1.out" 
+DEL /F "ejercicio1.obj" "tm4c1294ncpdt_startup_ccs.obj" 
+DEL /F "ejercicio1.d" "tm4c1294ncpdt_startup_ccs.d" 
+Finished clean
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project p1 ****
+
+"C:\\ti\\ccs1200\\ccs\\utils\\bin\\gmake" -k -j 12 all -O 
+ 
+Building file: "../tm4c1294ncpdt_startup_ccs.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-arm_20.2.6.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/Users/jwyx/OneDrive/Escritorio/SEPA/practicas/p1" --include_path="C:/Users/jwyx/OneDrive/Escritorio/SEPA/TivaWare_C_Series-2.1.3.156" --include_path="C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-arm_20.2.6.LTS/include" --define=ccs="ccs" --define=PART_TM4C1294NCPDT -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="tm4c1294ncpdt_startup_ccs.d_raw"  "../tm4c1294ncpdt_startup_ccs.c"
+Finished building: "../tm4c1294ncpdt_startup_ccs.c"
+ 
+Building file: "../ejercicio2.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-arm_20.2.6.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/Users/jwyx/OneDrive/Escritorio/SEPA/practicas/p1" --include_path="C:/Users/jwyx/OneDrive/Escritorio/SEPA/TivaWare_C_Series-2.1.3.156" --include_path="C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-arm_20.2.6.LTS/include" --define=ccs="ccs" --define=PART_TM4C1294NCPDT -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="ejercicio2.d_raw"  "../ejercicio2.c"
+ 
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'ejercicio2.obj' failed
+"../ejercicio2.c", line 32: error #20: identifier "estado" is undefined
+"../ejercicio2.c", line 40: error #20: identifier "estado" is undefined
+"../ejercicio2.c", line 131: warning #176-D: expression has no effect
+"../ejercicio2.c", line 132: warning #225-D: function "SystCtlSleep" declared implicitly
+2 errors detected in the compilation of "../ejercicio2.c".
+gmake: *** [ejercicio2.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project p1 ****
+
+"C:\\ti\\ccs1200\\ccs\\utils\\bin\\gmake" -k -j 12 all -O 
+ 
+Building file: "../ejercicio2.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-arm_20.2.6.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/Users/jwyx/OneDrive/Escritorio/SEPA/practicas/p1" --include_path="C:/Users/jwyx/OneDrive/Escritorio/SEPA/TivaWare_C_Series-2.1.3.156" --include_path="C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-arm_20.2.6.LTS/include" --define=ccs="ccs" --define=PART_TM4C1294NCPDT -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="ejercicio2.d_raw"  "../ejercicio2.c"
+"../ejercicio2.c", line 133: warning #176-D: expression has no effect
+"../ejercicio2.c", line 134: warning #225-D: function "SystCtlSleep" declared implicitly
+Finished building: "../ejercicio2.c"
+ 
+Building target: "p1.out"
+Invoking: Arm Linker
+"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-arm_20.2.6.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C1294NCPDT -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"p1.map" --heap_size=0 --stack_size=4096 -i"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-arm_20.2.6.LTS/lib" -i"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-arm_20.2.6.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="p1_linkInfo.xml" --rom_model -o "p1.out" "./ejercicio2.obj" "./tm4c1294ncpdt_startup_ccs.obj" "C:/Users/jwyx/OneDrive/Escritorio/SEPA/TivaWare_C_Series-2.1.3.156/driverlib/ccs/Debug/driverlib.lib" "../tm4c1294ncpdt.cmd"  -llibc.a 
+<Linking>
+ 
+ undefined    first referenced
+  symbol          in file     
+ ---------    ----------------
+ SystCtlSleep ./ejercicio2.obj
+ 
+error #10234-D: unresolved symbols remain
+error #10010: errors encountered during linking; "p1.out" not built
+ 
+>> Compilation failure
+makefile:143: recipe for target 'p1.out' failed
+gmake[1]: *** [p1.out] Error 1
+makefile:139: recipe for target 'all' failed
+gmake: *** [all] Error 2
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project p1 ****
+
+"C:\\ti\\ccs1200\\ccs\\utils\\bin\\gmake" -k -j 12 all -O 
+ 
+Building target: "p1.out"
+Invoking: Arm Linker
+"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-arm_20.2.6.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C1294NCPDT -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"p1.map" --heap_size=0 --stack_size=4096 -i"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-arm_20.2.6.LTS/lib" -i"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-arm_20.2.6.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="p1_linkInfo.xml" --rom_model -o "p1.out" "./ejercicio2.obj" "./tm4c1294ncpdt_startup_ccs.obj" "C:/Users/jwyx/OneDrive/Escritorio/SEPA/TivaWare_C_Series-2.1.3.156/driverlib/ccs/Debug/driverlib.lib" "../tm4c1294ncpdt.cmd"  -llibc.a 
+<Linking>
+ 
+ undefined    first referenced
+  symbol          in file     
+ ---------    ----------------
+ SystCtlSleep ./ejercicio2.obj
+ 
+error #10234-D: unresolved symbols remain
+error #10010: errors encountered during linking; "p1.out" not built
+ 
+>> Compilation failure
+makefile:143: recipe for target 'p1.out' failed
+gmake[1]: *** [p1.out] Error 1
+makefile:139: recipe for target 'all' failed
+gmake: *** [all] Error 2
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project p1 ****
+
+"C:\\ti\\ccs1200\\ccs\\utils\\bin\\gmake" -k -j 12 all -O 
+ 
+Building target: "p1.out"
+Invoking: Arm Linker
+"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-arm_20.2.6.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C1294NCPDT -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"p1.map" --heap_size=0 --stack_size=4096 -i"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-arm_20.2.6.LTS/lib" -i"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-arm_20.2.6.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="p1_linkInfo.xml" --rom_model -o "p1.out" "./ejercicio2.obj" "./tm4c1294ncpdt_startup_ccs.obj" "C:/Users/jwyx/OneDrive/Escritorio/SEPA/TivaWare_C_Series-2.1.3.156/driverlib/ccs/Debug/driverlib.lib" "../tm4c1294ncpdt.cmd"  -llibc.a 
+<Linking>
+ 
+ undefined    first referenced
+  symbol          in file     
+ ---------    ----------------
+ SystCtlSleep ./ejercicio2.obj
+ 
+error #10234-D: unresolved symbols remain
+error #10010: errors encountered during linking; "p1.out" not built
+ 
+>> Compilation failure
+makefile:143: recipe for target 'p1.out' failed
+gmake[1]: *** [p1.out] Error 1
+makefile:139: recipe for target 'all' failed
+gmake: *** [all] Error 2
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project p1 ****
+
+"C:\\ti\\ccs1200\\ccs\\utils\\bin\\gmake" -k -j 12 all -O 
+ 
+Building file: "../ejercicio2.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-arm_20.2.6.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/Users/jwyx/OneDrive/Escritorio/SEPA/practicas/p1" --include_path="C:/Users/jwyx/OneDrive/Escritorio/SEPA/TivaWare_C_Series-2.1.3.156" --include_path="C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-arm_20.2.6.LTS/include" --define=ccs="ccs" --define=PART_TM4C1294NCPDT -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="ejercicio2.d_raw"  "../ejercicio2.c"
+"../ejercicio2.c", line 138: warning #176-D: expression has no effect
+"../ejercicio2.c", line 140: warning #225-D: function "SystCtlSleep" declared implicitly
+Finished building: "../ejercicio2.c"
+ 
+Building target: "p1.out"
+Invoking: Arm Linker
+"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-arm_20.2.6.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C1294NCPDT -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"p1.map" --heap_size=0 --stack_size=4096 -i"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-arm_20.2.6.LTS/lib" -i"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-arm_20.2.6.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="p1_linkInfo.xml" --rom_model -o "p1.out" "./ejercicio2.obj" "./tm4c1294ncpdt_startup_ccs.obj" "C:/Users/jwyx/OneDrive/Escritorio/SEPA/TivaWare_C_Series-2.1.3.156/driverlib/ccs/Debug/driverlib.lib" "../tm4c1294ncpdt.cmd"  -llibc.a 
+<Linking>
+ 
+ undefined    first referenced
+  symbol          in file     
+ ---------    ----------------
+ SystCtlSleep ./ejercicio2.obj
+ 
+error #10234-D: unresolved symbols remain
+error #10010: errors encountered during linking; "p1.out" not built
+ 
+>> Compilation failure
+makefile:143: recipe for target 'p1.out' failed
+gmake[1]: *** [p1.out] Error 1
+makefile:139: recipe for target 'all' failed
+gmake: *** [all] Error 2
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project p1 ****
+
+"C:\\ti\\ccs1200\\ccs\\utils\\bin\\gmake" -k -j 12 all -O 
+ 
+Building file: "../ejercicio2.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-arm_20.2.6.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/Users/jwyx/OneDrive/Escritorio/SEPA/practicas/p1" --include_path="C:/Users/jwyx/OneDrive/Escritorio/SEPA/TivaWare_C_Series-2.1.3.156" --include_path="C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-arm_20.2.6.LTS/include" --define=ccs="ccs" --define=PART_TM4C1294NCPDT -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="ejercicio2.d_raw"  "../ejercicio2.c"
+"../ejercicio2.c", line 133: warning #176-D: expression has no effect
+Finished building: "../ejercicio2.c"
+ 
+Building target: "p1.out"
+Invoking: Arm Linker
+"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-arm_20.2.6.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C1294NCPDT -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"p1.map" --heap_size=0 --stack_size=4096 -i"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-arm_20.2.6.LTS/lib" -i"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-arm_20.2.6.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="p1_linkInfo.xml" --rom_model -o "p1.out" "./ejercicio2.obj" "./tm4c1294ncpdt_startup_ccs.obj" "C:/Users/jwyx/OneDrive/Escritorio/SEPA/TivaWare_C_Series-2.1.3.156/driverlib/ccs/Debug/driverlib.lib" "../tm4c1294ncpdt.cmd"  -llibc.a 
+<Linking>
+Finished building target: "p1.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project p1 ****
+
+"C:\\ti\\ccs1200\\ccs\\utils\\bin\\gmake" -k -j 12 all -O 
+ 
+gmake[1]: 'p1.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project p1 ****
+
+"C:\\ti\\ccs1200\\ccs\\utils\\bin\\gmake" -k -j 12 all -O 
+ 
+Building file: "../ejercicio2.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-arm_20.2.6.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/Users/jwyx/OneDrive/Escritorio/SEPA/practicas/p1" --include_path="C:/Users/jwyx/OneDrive/Escritorio/SEPA/TivaWare_C_Series-2.1.3.156" --include_path="C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-arm_20.2.6.LTS/include" --define=ccs="ccs" --define=PART_TM4C1294NCPDT -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="ejercicio2.d_raw"  "../ejercicio2.c"
+"../ejercicio2.c", line 132: warning #176-D: expression has no effect
+Finished building: "../ejercicio2.c"
+ 
+Building target: "p1.out"
+Invoking: Arm Linker
+"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-arm_20.2.6.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C1294NCPDT -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"p1.map" --heap_size=0 --stack_size=4096 -i"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-arm_20.2.6.LTS/lib" -i"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-arm_20.2.6.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="p1_linkInfo.xml" --rom_model -o "p1.out" "./ejercicio2.obj" "./tm4c1294ncpdt_startup_ccs.obj" "C:/Users/jwyx/OneDrive/Escritorio/SEPA/TivaWare_C_Series-2.1.3.156/driverlib/ccs/Debug/driverlib.lib" "../tm4c1294ncpdt.cmd"  -llibc.a 
+<Linking>
+Finished building target: "p1.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project p1 ****
+
+"C:\\ti\\ccs1200\\ccs\\utils\\bin\\gmake" -k -j 12 all -O 
+ 
+gmake[1]: 'p1.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project p1 ****
+
+"C:\\ti\\ccs1200\\ccs\\utils\\bin\\gmake" -k -j 12 all -O 
+ 
+Building file: "../ejercicio2.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-arm_20.2.6.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/Users/jwyx/OneDrive/Escritorio/SEPA/practicas/p1" --include_path="C:/Users/jwyx/OneDrive/Escritorio/SEPA/TivaWare_C_Series-2.1.3.156" --include_path="C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-arm_20.2.6.LTS/include" --define=ccs="ccs" --define=PART_TM4C1294NCPDT -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="ejercicio2.d_raw"  "../ejercicio2.c"
+"../ejercicio2.c", line 132: warning #176-D: expression has no effect
+Finished building: "../ejercicio2.c"
+ 
+Building target: "p1.out"
+Invoking: Arm Linker
+"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-arm_20.2.6.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C1294NCPDT -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"p1.map" --heap_size=0 --stack_size=4096 -i"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-arm_20.2.6.LTS/lib" -i"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-arm_20.2.6.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="p1_linkInfo.xml" --rom_model -o "p1.out" "./ejercicio2.obj" "./tm4c1294ncpdt_startup_ccs.obj" "C:/Users/jwyx/OneDrive/Escritorio/SEPA/TivaWare_C_Series-2.1.3.156/driverlib/ccs/Debug/driverlib.lib" "../tm4c1294ncpdt.cmd"  -llibc.a 
+<Linking>
+Finished building target: "p1.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project p1 ****
+
+"C:\\ti\\ccs1200\\ccs\\utils\\bin\\gmake" -k -j 12 all -O 
+ 
+Building file: "../ejercicio2.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-arm_20.2.6.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/Users/jwyx/OneDrive/Escritorio/SEPA/practicas/p1" --include_path="C:/Users/jwyx/OneDrive/Escritorio/SEPA/TivaWare_C_Series-2.1.3.156" --include_path="C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-arm_20.2.6.LTS/include" --define=ccs="ccs" --define=PART_TM4C1294NCPDT -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="ejercicio2.d_raw"  "../ejercicio2.c"
+"../ejercicio2.c", line 132: warning #176-D: expression has no effect
+Finished building: "../ejercicio2.c"
+ 
+Building target: "p1.out"
+Invoking: Arm Linker
+"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-arm_20.2.6.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C1294NCPDT -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"p1.map" --heap_size=0 --stack_size=4096 -i"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-arm_20.2.6.LTS/lib" -i"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-arm_20.2.6.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="p1_linkInfo.xml" --rom_model -o "p1.out" "./ejercicio2.obj" "./tm4c1294ncpdt_startup_ccs.obj" "C:/Users/jwyx/OneDrive/Escritorio/SEPA/TivaWare_C_Series-2.1.3.156/driverlib/ccs/Debug/driverlib.lib" "../tm4c1294ncpdt.cmd"  -llibc.a 
+<Linking>
+Finished building target: "p1.out"
+ 
+
+**** Build Finished ****
+
+**** Clean-only build of configuration Debug for project p1 ****
+
+"C:\\ti\\ccs1200\\ccs\\utils\\bin\\gmake" -k -j 12 clean -O 
+ 
+DEL /F  "p1.hex"  "p1.out" 
+DEL /F "ejercicio2.obj" "tm4c1294ncpdt_startup_ccs.obj" 
+DEL /F "ejercicio2.d" "tm4c1294ncpdt_startup_ccs.d" 
+Finished clean
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project p1 ****
+
+"C:\\ti\\ccs1200\\ccs\\utils\\bin\\gmake" -k -j 12 all -O 
+ 
+Building file: "../ejercicio2.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-arm_20.2.6.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/Users/jwyx/OneDrive/Escritorio/SEPA/practicas/p1" --include_path="C:/Users/jwyx/OneDrive/Escritorio/SEPA/TivaWare_C_Series-2.1.3.156" --include_path="C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-arm_20.2.6.LTS/include" --define=ccs="ccs" --define=PART_TM4C1294NCPDT -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="ejercicio2.d_raw"  "../ejercicio2.c"
+ 
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'ejercicio2.obj' failed
+"../ejercicio2.c", line 36: error #20: identifier "MaxEstado" is undefined
+"../ejercicio2.c", line 132: warning #176-D: expression has no effect
+1 error detected in the compilation of "../ejercicio2.c".
+gmake: *** [ejercicio2.obj] Error 1
+Building file: "../tm4c1294ncpdt_startup_ccs.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-arm_20.2.6.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/Users/jwyx/OneDrive/Escritorio/SEPA/practicas/p1" --include_path="C:/Users/jwyx/OneDrive/Escritorio/SEPA/TivaWare_C_Series-2.1.3.156" --include_path="C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-arm_20.2.6.LTS/include" --define=ccs="ccs" --define=PART_TM4C1294NCPDT -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="tm4c1294ncpdt_startup_ccs.d_raw"  "../tm4c1294ncpdt_startup_ccs.c"
+Finished building: "../tm4c1294ncpdt_startup_ccs.c"
+ 
+Building file: "../ejercicio1.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-arm_20.2.6.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/Users/jwyx/OneDrive/Escritorio/SEPA/practicas/p1" --include_path="C:/Users/jwyx/OneDrive/Escritorio/SEPA/TivaWare_C_Series-2.1.3.156" --include_path="C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-arm_20.2.6.LTS/include" --define=ccs="ccs" --define=PART_TM4C1294NCPDT -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="ejercicio1.d_raw"  "../ejercicio1.c"
+"../ejercicio1.c", line 115: warning #176-D: expression has no effect
+Finished building: "../ejercicio1.c"
+ 
+Building file: "../ejercicio2_mio.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-arm_20.2.6.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/Users/jwyx/OneDrive/Escritorio/SEPA/practicas/p1" --include_path="C:/Users/jwyx/OneDrive/Escritorio/SEPA/TivaWare_C_Series-2.1.3.156" --include_path="C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-arm_20.2.6.LTS/include" --define=ccs="ccs" --define=PART_TM4C1294NCPDT -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="ejercicio2_mio.d_raw"  "../ejercicio2_mio.c"
+"../ejercicio2_mio.c", line 132: warning #176-D: expression has no effect
+Finished building: "../ejercicio2_mio.c"
+ 
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project p1 ****
+
+"C:\\ti\\ccs1200\\ccs\\utils\\bin\\gmake" -k -j 12 all -O 
+ 
+Building file: "../ejercicio2.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-arm_20.2.6.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/Users/jwyx/OneDrive/Escritorio/SEPA/practicas/p1" --include_path="C:/Users/jwyx/OneDrive/Escritorio/SEPA/TivaWare_C_Series-2.1.3.156" --include_path="C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-arm_20.2.6.LTS/include" --define=ccs="ccs" --define=PART_TM4C1294NCPDT -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="ejercicio2.d_raw"  "../ejercicio2.c"
+ 
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'ejercicio2.obj' failed
+"../ejercicio2.c", line 36: error #20: identifier "MaxEstado" is undefined
+"../ejercicio2.c", line 132: warning #176-D: expression has no effect
+1 error detected in the compilation of "../ejercicio2.c".
+gmake: *** [ejercicio2.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Clean-only build of configuration Debug for project p1 ****
+
+"C:\\ti\\ccs1200\\ccs\\utils\\bin\\gmake" -k -j 12 clean -O 
+ 
+DEL /F  "p1.hex"  "p1.out" 
+DEL /F "ejercicio1.obj" "ejercicio2.obj" "ejercicio2_mio.obj" "tm4c1294ncpdt_startup_ccs.obj" 
+DEL /F "ejercicio1.d" "ejercicio2.d" "ejercicio2_mio.d" "tm4c1294ncpdt_startup_ccs.d" 
+Could Not Find C:\Users\jwyx\OneDrive\Escritorio\SEPA\practicas\p1\Debug\p1.hex
+Finished clean
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project p1 ****
+
+"C:\\ti\\ccs1200\\ccs\\utils\\bin\\gmake" -k -j 12 all -O 
+ 
+Building file: "../tm4c1294ncpdt_startup_ccs.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-arm_20.2.6.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/Users/jwyx/OneDrive/Escritorio/SEPA/practicas/p1" --include_path="C:/Users/jwyx/OneDrive/Escritorio/SEPA/TivaWare_C_Series-2.1.3.156" --include_path="C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-arm_20.2.6.LTS/include" --define=ccs="ccs" --define=PART_TM4C1294NCPDT -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="tm4c1294ncpdt_startup_ccs.d_raw"  "../tm4c1294ncpdt_startup_ccs.c"
+Finished building: "../tm4c1294ncpdt_startup_ccs.c"
+ 
+Building file: "../ejercicio1.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-arm_20.2.6.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/Users/jwyx/OneDrive/Escritorio/SEPA/practicas/p1" --include_path="C:/Users/jwyx/OneDrive/Escritorio/SEPA/TivaWare_C_Series-2.1.3.156" --include_path="C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-arm_20.2.6.LTS/include" --define=ccs="ccs" --define=PART_TM4C1294NCPDT -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="ejercicio1.d_raw"  "../ejercicio1.c"
+"../ejercicio1.c", line 115: warning #176-D: expression has no effect
+Finished building: "../ejercicio1.c"
+ 
+Building target: "p1.out"
+Invoking: Arm Linker
+"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-arm_20.2.6.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C1294NCPDT -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"p1.map" --heap_size=0 --stack_size=4096 -i"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-arm_20.2.6.LTS/lib" -i"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-arm_20.2.6.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="p1_linkInfo.xml" --rom_model -o "p1.out" "./ejercicio1.obj" "./tm4c1294ncpdt_startup_ccs.obj" "C:/Users/jwyx/OneDrive/Escritorio/SEPA/TivaWare_C_Series-2.1.3.156/driverlib/ccs/Debug/driverlib.lib" "../tm4c1294ncpdt.cmd"  -llibc.a 
+<Linking>
+Finished building target: "p1.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project p1 ****
+
+"C:\\ti\\ccs1200\\ccs\\utils\\bin\\gmake" -k -j 12 all -O 
+ 
+gmake[1]: 'p1.out' is up to date.
+
+**** Build Finished ****
+
+**** Clean-only build of configuration Debug for project p1 ****
+
+"C:\\ti\\ccs1200\\ccs\\utils\\bin\\gmake" -k -j 12 clean -O 
+ 
+DEL /F  "p1.hex"  "p1.out" 
+DEL /F "ejercicio1.obj" "tm4c1294ncpdt_startup_ccs.obj" 
+DEL /F "ejercicio1.d" "tm4c1294ncpdt_startup_ccs.d" 
+Finished clean
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project p1 ****
+
+"C:\\ti\\ccs1200\\ccs\\utils\\bin\\gmake" -k -j 12 all -O 
+ 
+Building file: "../tm4c1294ncpdt_startup_ccs.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-arm_20.2.6.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/Users/jwyx/OneDrive/Escritorio/SEPA/practicas/p1" --include_path="C:/Users/jwyx/OneDrive/Escritorio/SEPA/TivaWare_C_Series-2.1.3.156" --include_path="C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-arm_20.2.6.LTS/include" --define=ccs="ccs" --define=PART_TM4C1294NCPDT -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="tm4c1294ncpdt_startup_ccs.d_raw"  "../tm4c1294ncpdt_startup_ccs.c"
+Finished building: "../tm4c1294ncpdt_startup_ccs.c"
+ 
+Building file: "../ejercicio2.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-arm_20.2.6.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/Users/jwyx/OneDrive/Escritorio/SEPA/practicas/p1" --include_path="C:/Users/jwyx/OneDrive/Escritorio/SEPA/TivaWare_C_Series-2.1.3.156" --include_path="C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-arm_20.2.6.LTS/include" --define=ccs="ccs" --define=PART_TM4C1294NCPDT -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="ejercicio2.d_raw"  "../ejercicio2.c"
+ 
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'ejercicio2.obj' failed
+"../ejercicio2.c", line 36: error #20: identifier "MaxEstado" is undefined
+"../ejercicio2.c", line 132: warning #176-D: expression has no effect
+1 error detected in the compilation of "../ejercicio2.c".
+gmake: *** [ejercicio2.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project p1 ****
+
+"C:\\ti\\ccs1200\\ccs\\utils\\bin\\gmake" -k -j 12 all -O 
+ 
+Building file: "../ejercicio2.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-arm_20.2.6.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/Users/jwyx/OneDrive/Escritorio/SEPA/practicas/p1" --include_path="C:/Users/jwyx/OneDrive/Escritorio/SEPA/TivaWare_C_Series-2.1.3.156" --include_path="C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-arm_20.2.6.LTS/include" --define=ccs="ccs" --define=PART_TM4C1294NCPDT -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="ejercicio2.d_raw"  "../ejercicio2.c"
+"../ejercicio2.c", line 132: warning #176-D: expression has no effect
+Finished building: "../ejercicio2.c"
+ 
+Building target: "p1.out"
+Invoking: Arm Linker
+"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-arm_20.2.6.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C1294NCPDT -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"p1.map" --heap_size=0 --stack_size=4096 -i"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-arm_20.2.6.LTS/lib" -i"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-arm_20.2.6.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="p1_linkInfo.xml" --rom_model -o "p1.out" "./ejercicio2.obj" "./tm4c1294ncpdt_startup_ccs.obj" "C:/Users/jwyx/OneDrive/Escritorio/SEPA/TivaWare_C_Series-2.1.3.156/driverlib/ccs/Debug/driverlib.lib" "../tm4c1294ncpdt.cmd"  -llibc.a 
+<Linking>
+Finished building target: "p1.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project p1 ****
+
+"C:\\ti\\ccs1200\\ccs\\utils\\bin\\gmake" -k -j 12 all -O 
+ 
+gmake[1]: 'p1.out' is up to date.
+
+**** Build Finished ****
+
+**** Clean-only build of configuration Debug for project p1 ****
+
+"C:\\ti\\ccs1200\\ccs\\utils\\bin\\gmake" -k -j 12 clean -O 
+ 
+DEL /F  "p1.hex"  "p1.out" 
+DEL /F "ejercicio2.obj" "tm4c1294ncpdt_startup_ccs.obj" 
+DEL /F "ejercicio2.d" "tm4c1294ncpdt_startup_ccs.d" 
+Finished clean
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project p1 ****
+
+"C:\\ti\\ccs1200\\ccs\\utils\\bin\\gmake" -k -j 12 all -O 
+ 
+Building file: "../tm4c1294ncpdt_startup_ccs.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-arm_20.2.6.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/Users/jwyx/OneDrive/Escritorio/SEPA/practicasSEPA/p1" --include_path="C:/Users/jwyx/OneDrive/Escritorio/SEPA/TivaWare_C_Series-2.1.3.156" --include_path="C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-arm_20.2.6.LTS/include" --define=ccs="ccs" --define=PART_TM4C1294NCPDT -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="tm4c1294ncpdt_startup_ccs.d_raw"  "../tm4c1294ncpdt_startup_ccs.c"
+Finished building: "../tm4c1294ncpdt_startup_ccs.c"
+ 
+Building file: "../ejercicio2.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-arm_20.2.6.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/Users/jwyx/OneDrive/Escritorio/SEPA/practicasSEPA/p1" --include_path="C:/Users/jwyx/OneDrive/Escritorio/SEPA/TivaWare_C_Series-2.1.3.156" --include_path="C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-arm_20.2.6.LTS/include" --define=ccs="ccs" --define=PART_TM4C1294NCPDT -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="ejercicio2.d_raw"  "../ejercicio2.c"
+"../ejercicio2.c", line 132: warning #176-D: expression has no effect
+Finished building: "../ejercicio2.c"
+ 
+Building target: "p1.out"
+Invoking: Arm Linker
+"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-arm_20.2.6.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C1294NCPDT -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"p1.map" --heap_size=0 --stack_size=4096 -i"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-arm_20.2.6.LTS/lib" -i"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-arm_20.2.6.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="p1_linkInfo.xml" --rom_model -o "p1.out" "./ejercicio2.obj" "./tm4c1294ncpdt_startup_ccs.obj" "C:/Users/jwyx/OneDrive/Escritorio/SEPA/TivaWare_C_Series-2.1.3.156/driverlib/ccs/Debug/driverlib.lib" "../tm4c1294ncpdt.cmd"  -llibc.a 
+<Linking>
+Finished building target: "p1.out"
+ 
+
+**** Build Finished ****

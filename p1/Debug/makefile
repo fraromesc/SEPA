@@ -12,7 +12,7 @@ GEN_CMDS__FLAG :=
 ORDERED_OBJS += \
 "./ejercicio2.obj" \
 "./tm4c1294ncpdt_startup_ccs.obj" \
-"C:/Users/jwyx/OneDrive/Escritorio/SEPA/TivaWare_C_Series-2.1.3.156/driverlib/ccs/Debug/driverlib.lib" \
+"C:/Users/jwyx/OneDrive/Escritorio/gierm/sepa/SEPA/TivaWare_C_Series-2.1.3.156/driverlib/ccs/Debug/driverlib.lib" \
 "../tm4c1294ncpdt.cmd" \
 $(GEN_CMDS__FLAG) \
 -llibc.a \

@@ -1,7 +1,7 @@
 ******************************************************************************
                   TI ARM Linker PC v20.2.6                     
 ******************************************************************************
->> Linked Mon Oct  3 17:52:16 2022
+>> Linked Mon Oct 24 21:04:27 2022
 
 OUTPUT FILE NAME:   <p1.out>
 ENTRY POINT SYMBOL: "_c_int00_noargs"  address: 00000a29
@@ -119,7 +119,7 @@ MODULE SUMMARY
     +--+-------------------------------+------+---------+---------+
        Total:                          620    520       8      
                                                                
-    C:/Users/jwyx/OneDrive/Escritorio/SEPA/TivaWare_C_Series-2.1.3.156/driverlib/ccs/Debug/driverlib.lib
+    C:/Users/jwyx/OneDrive/Escritorio/gierm/sepa/SEPA/TivaWare_C_Series-2.1.3.156/driverlib/ccs/Debug/driverlib.lib
        sysctl.obj                      654    596       0      
        interrupt.obj                   172    112       620    
        gpio.obj                        508    384       0      

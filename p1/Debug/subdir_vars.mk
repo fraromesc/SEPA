@@ -9,7 +9,7 @@ CMD_SRCS += \
 ../tm4c1294ncpdt.cmd 
 
 LIB_SRCS += \
-C:/Users/jwyx/OneDrive/Escritorio/SEPA/TivaWare_C_Series-2.1.3.156/driverlib/ccs/Debug/driverlib.lib 
+C:/Users/jwyx/OneDrive/Escritorio/gierm/sepa/SEPA/TivaWare_C_Series-2.1.3.156/driverlib/ccs/Debug/driverlib.lib 
 
 C_SRCS += \
 ../ejercicio2.c \

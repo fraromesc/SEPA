@@ -81,7 +81,7 @@
 						</toolChain>
 					</folderInfo>
 					<sourceEntries>
-						<entry excluding="vending.c|tm4c1294ncpdt.cmd|tm4c1294ncpdt_startup_ccs.c|tiva_eve1.c|tiva_eve_colors.c|tiva_eve_calib.c" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name=""/>
+						<entry excluding="tm4c1294ncpdt.cmd|tm4c1294ncpdt_startup_ccs.c|tiva_eve1.c|tiva_eve_colors.c|tiva_eve_calib.c" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name=""/>
 					</sourceEntries>
 				</configuration>
 			</storageModule>

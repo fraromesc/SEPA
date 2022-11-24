@@ -1,27 +1,24 @@
-/*
- * main.c
- */
-
-
 #include <stdint.h>
 #include <stdbool.h>
 #include "driverlib2.h"
-
+//Librería para el uso de la pantalla
 #include "FT800_TIVA.h"
 
-
-//DEFINICION DE COLORES
+//Definimos cada uno de los colores en que vamos a utilizar, en formato RGB
 #define rojo 163,47,41
 #define amarillo 255,255,153
 #define gris 128,128,128
-#define verde 128,255,0
+#define verde 118,196,49
 #define verde2 153,255,51
 #define negro 0,0,0
 #define blanco 255,255,255
+//Hacemos una división del ancho y del alto de la pantalla, de forma que multiplicando
+//dichas divisiones por constantes, podamos establecer coordenadas dentro de la "cuadrícula" de la pantalla
 #define divHor HSIZE/26
 #define divVer VSIZE/12
 
-//DEFINICIÓN ESTADOS DE LA MAQUINA DE ESTADOS
+//Definición de cada una de las instancias por las que pasará la máquina de estados, en función
+//de que estemos en estado de espera, pulsando un botón de la pantalla o de la placa
 #define espera 0
 #define l1 1
 #define l2 2
@@ -30,13 +27,13 @@
 #define b1 5
 #define b2 6
 
-//DEFINICIÓN COMPROBACION BOTONES
+//Definición para los estados de comprobación de la pulsación de los botones
 #define B2_OFF GPIOPinRead(GPIO_PORTJ_BASE,GPIO_PIN_0)
 #define B2_ON !(GPIOPinRead(GPIO_PORTJ_BASE,GPIO_PIN_0))
 #define B1_OFF GPIOPinRead(GPIO_PORTJ_BASE,GPIO_PIN_1)
 #define B1_ON !(GPIOPinRead(GPIO_PORTJ_BASE,GPIO_PIN_1))
 
-//DEFINICION DE ESTADOS ENCENDIDO Y APAGADO DE LOS LEDS
+//Definición de los estados encendido y apagado de los LEDs
 #define L4_ON GPIOPinWrite(GPIO_PORTN_BASE,GPIO_PIN_1,GPIO_PIN_1)
 #define L4_OFF GPIOPinWrite(GPIO_PORTN_BASE,GPIO_PIN_1,0)
 #define L3_ON GPIOPinWrite(GPIO_PORTN_BASE,GPIO_PIN_0,GPIO_PIN_0)
@@ -47,13 +44,13 @@
 #define L1_ON GPIOPinWrite(GPIO_PORTF_BASE,GPIO_PIN_0,GPIO_PIN_0)
 #define L1_OFF GPIOPinWrite(GPIO_PORTF_BASE,GPIO_PIN_0,0)
 
-
+//Definición de los 4 botones de la pantalla, con sus coordenadas en función de las divisiones horizontal y vertical
 #define dibL1 Boton((4)*divHor, VSIZE-4*divVer, 3*divHor, 2*divVer,27, "L1")
 #define dibL2 Boton((5+4)*divHor, VSIZE-4*divVer, 3*divHor, 2*divVer,27, "L2")
 #define dibL3 Boton((10+4)*divHor, VSIZE-4*divVer, 3*divHor, 2*divVer,27, "L3")
 #define dibL4 Boton((15+4)*divHor, VSIZE-4*divVer, 3*divHor, 2*divVer,27, "L4")
 
-//DEFINICION PARA DIBUJO
+//DEFINICION PARA DIBUJO Definición para
 #define alturaCuadro 20
 #define largoCuadro 50
 
@@ -62,8 +59,6 @@
 // =======================================================================
 #define dword long
 #define byte char
-
-
 
 #define PosMin 750
 #define PosMax 1000
@@ -95,16 +90,15 @@ const int32_t REG_CAL[6]={21696,-78,-614558,498,-17021,15755638};
 const int32_t REG_CAL5[6]={32146, -1428, -331110, -40, -18930, 18321010};
 
 
-
 #define NUM_SSI_DATA  3
 
-int RELOJ, Flag_ints;
+int RELOJ, Flag_ints, i;
 
-int modo =espera; //Control de maquina de estado
+int modo = espera; //Control de máquina de estados
 
 //Función del SLEEP fake, utilizar en caso de que dé problemas al usar el debugger
-#define SLEEP SysCtlSleep()
-//#define SLEEP SysCtlSleepFake()
+//#define SLEEP SysCtlSleep()
+#define SLEEP SysCtlSleepFake()
 void SysCtlSleepFake(void)
 {
  while(!Flag_ints);
@@ -122,7 +116,6 @@ void IntTimer0(void)
 }
 int main(void)
 {
-
 
     //Habilitar los periféricos implicados en el eje: GPIOF, GPIOJ, GPION
     SysCtlPeripheralEnable(SYSCTL_PERIPH_GPIOF);
@@ -145,7 +138,7 @@ int main(void)
     GPIOPinWrite(GPIO_PORTF_BASE, GPIO_PIN_4, 0);
     GPIOPinWrite(GPIO_PORTF_BASE, GPIO_PIN_0, 0);
 
-    int i;
+
 
     RELOJ=SysCtlClockFreqSet((SYSCTL_XTAL_25MHZ | SYSCTL_OSC_MAIN | SYSCTL_USE_PLL | SYSCTL_CFG_VCO_480), 120000000);
 
@@ -172,18 +165,22 @@ int main(void)
     // ================================================================================================================
     // PANTALLA INICIAL
     // ================================================================================================================
-
+    //Primera orden necesaria para el uso de la pantalla
     Lee_pantalla();
+    //Pantalla en blanco
     Nueva_pantalla(blanco);
+    //Cambio de color a rojo
     ComColor(rojo);
+    //Dibujar el
     ComRect(divHor, divVer, HSIZE-divHor, VSIZE-divVer, true);
     ComLineWidth(10);
-
+    //Pintamos en blanco el texto y el reciadro blanco inferior
     ComColor(blanco);
     ComTXT(HSIZE/2,1.8*divVer, 29, OPT_CENTERX,"BOTONES:");
     ComRect(4*divHor, 5.5*divVer, HSIZE-4*divHor, 3.5*divVer, true);
 
-    //IMPRESIÓN DE BOTONES
+    //Impresión de cada uno de los botones en verde, equiespaciados y respetando las proporciones
+    //Lo repetimos 4 veces, cambiando el número en la cadena
     ComFgcolor(verde);
     int j;
     char textBot[]="L0";
@@ -194,8 +191,10 @@ int main(void)
     }
 
     Dibuja();
-    Espera_pant();
+    //Espera_pant();
 
+    //Calibración predeterminada de la pantalla
+    int i;
 #ifdef VM800B35
     for(i=0;i<6;i++)	Esc_Reg(REG_TOUCH_TRANSFORM_A+4*i, REG_CAL[i]);
 #endif
@@ -204,25 +203,26 @@ int main(void)
 #endif
 
     while(1){
+        //Ciclo de ejecución cada 50 ms
         SLEEP;
+
+        //Definimos como cadena vacía el hueco sobre el que va a ir escrito el texto
         char texto[]="              ";
-     //   Lee_pantalla();
+        //Creamos una nueva pantalla, de color blanco
         Nueva_pantalla(blanco);
+        //Pintamos un rectángulo rojo
         ComColor(rojo);
         ComRect(divHor, divVer, HSIZE-divHor, VSIZE-divVer, true);
         ComLineWidth(10);
+        //Cambio de color a blanco, e imprimimos la pantalla botones centrada en el eje X
         ComColor(blanco);
         ComTXT(HSIZE/2,1.8*divVer, 29, OPT_CENTERX,"BOTONES:");
         ComRect(4*divHor, 5.5*divVer, HSIZE-4*divHor, 3.5*divVer, true);
         ComFgcolor(verde);
-       /* for(j=0;  j<4; j++)
-         {
-             textBot[1]++;
-             Boton((j*5+4)*divHor, VSIZE-4*divVer, 3*divHor, 2*divVer,27, textBot);
-         }*/
-        //MAQUINA DE ESTADO
+        //Máquina de estados:
+        //Dentro del modo espera, cuando no se pulsa ni la pantalla ni los botones:
         if(modo==espera)
-        {
+        {                   //Tenemos los leds apagados, y si se pulsa un determinado botón se pasa el estado correspondiente
             if (B1_ON)  modo=b1;
             if (B2_ON) modo=b2;
             if (dibL1) modo=l1;
@@ -234,40 +234,40 @@ int main(void)
             L3_OFF;
             L4_OFF;
         }
-        else if (modo==l1)
-            {
+        else if (modo==l1)  //Si pulsamos el botón L1, pasamos al estado l1
+        {                   //Redibujamos el resto de botones y encendemos el primer led. Al dejar de pulsar, volvemos al estado de espera
             dibL2;
             dibL3;
             dibL4;
             L1_ON;
             if(!dibL1) modo=espera;
-            }
-        else if (modo==l2)
-                    {
-                    dibL1;
-                    dibL3;
-                    dibL4;
-                    L2_ON;
-                    if(!dibL2) modo=espera;
-                    }
-        else if (modo==l3)
-                    {
-                    dibL1;
-                    dibL2;
-                    dibL4;
-                    L3_ON;
-                    if(!dibL3) modo=espera;
-                    }
-        else if (modo==l4)
-                    {
-                    dibL1;
-                    dibL2;
-                    dibL3;
-                    L4_ON;
-                    if(!dibL4) modo=espera;
-                    }
-        else if (modo==b1)
-        {
+        }
+        else if (modo==l2)  //Si pulsamos el botón L2, pasamos al estado l2
+        {                   //Redibujamos el resto de botones y encendemos el segundo led. Al dejar de pulsar, volvemos al estado de espera
+            dibL1;
+            dibL3;
+            dibL4;
+            L2_ON;
+            if(!dibL2) modo=espera;
+        }
+        else if (modo==l3)  //Si pulsamos el botón L3, pasamos al estado l3
+        {                   //Redibujamos el resto de botones y encendemos el tercer led. Al dejar de pulsar, volvemos al estado de espera
+            dibL1;
+            dibL2;
+            dibL4;
+            L3_ON;
+            if(!dibL3) modo=espera;
+        }
+        else if (modo==l4)  //Si pulsamos el botón L4, pasamos al estado l4
+        {                   //Redibujamos el resto de botones y encendemos el cuarto led. Al dejar de pulsar, volvemos al estado de espera
+            dibL1;
+            dibL2;
+            dibL3;
+            L4_ON;
+            if(!dibL4) modo=espera;
+        }
+        else if (modo==b1)  //Si pulsamos el botón B1 de la placa, pasamos al estado b1
+        {                   //Escribimos el texto centrado dentro del recuadro blanco y redibujamos los botones. Al dejar de pulsar volvemos al reposo.
             ComColor(negro);
             ComTXT(HSIZE/2, 4.5*divVer,29, OPT_CENTER, "HAS PULSADO B1");
             ComColor(blanco);
@@ -278,8 +278,8 @@ int main(void)
             if (B1_OFF) modo=espera;
 
         }
-        else if (modo==b2)
-                {
+        else if (modo==b2)  //Si pulsamos el botón B1 de la placa, pasamos al estado b1
+        {                   //Escribimos el texto centrado dentro del recuadro blanco y redibujamos los botones. Al dejar de pulsar volvemos al reposo.
 
             ComColor(negro);
             ComTXT(HSIZE/2, 4.5*divVer,29, OPT_CENTER, "HAS PULSADO B2");
@@ -289,17 +289,10 @@ int main(void)
             dibL3;
             dibL4;
             if (B2_OFF) modo=espera;
-                }
+        }
 
-        /*if(dibL1) L1_ON;
-        else L1_OFF;
-        if(dibL2) L2_ON;
-        else L2_OFF;
-        if(dibL3) L3_ON;
-        else L3_OFF;
-        if(dibL4) L4_ON;
-        else L4_OFF;*/
-           Dibuja();
+
+        Dibuja();
 
 
     }

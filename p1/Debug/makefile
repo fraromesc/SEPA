@@ -10,7 +10,7 @@ GEN_OPTS__FLAG :=
 GEN_CMDS__FLAG := 
 
 ORDERED_OBJS += \
-"./ejercicio1.obj" \
+"./ejercicio2.obj" \
 "./tm4c1294ncpdt_startup_ccs.obj" \
 "C:/Users/jwyx/Documents/TARDIS/SAVE/gierm/sepa/SEPA/TivaWare_C_Series-2.1.3.156/driverlib/ccs/Debug/driverlib.lib" \
 "../tm4c1294ncpdt.cmd" \
@@ -156,8 +156,8 @@ p1.hex: $(EXE_OUTPUTS)
 # Other Targets
 clean:
 	-$(RM) $(BIN_OUTPUTS__QUOTED)$(EXE_OUTPUTS__QUOTED)
-	-$(RM) "ejercicio1.obj" "tm4c1294ncpdt_startup_ccs.obj" 
-	-$(RM) "ejercicio1.d" "tm4c1294ncpdt_startup_ccs.d" 
+	-$(RM) "ejercicio2.obj" "tm4c1294ncpdt_startup_ccs.obj" 
+	-$(RM) "ejercicio2.d" "tm4c1294ncpdt_startup_ccs.d" 
 	-@echo 'Finished clean'
 	-@echo ' '
 

@@ -81,7 +81,7 @@
 						</toolChain>
 					</folderInfo>
 					<sourceEntries>
-						<entry excluding="Ejercicio_1.c|EJEMPLO3.c|EJEMPLO3_mod.c|EJEMPLO3_4.C|EJEMPLO3_3.c|EJEMPLO3_3_mod.c|EJEMPLO3_2.c|EJEMPLO3_2_mod.c|EJEMPLO2_5_1819.c|EJEMPLO2_4_2021.c|EJEMPLO2_3_1819.c|EJEMPLO2_2_1819.c|EJEMPLO2_1819.c" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name=""/>
+						<entry excluding="EJEMPLO3.c|EJEMPLO3_mod.c|EJEMPLO3_4.C|EJEMPLO3_3.c|EJEMPLO3_3_mod.c|EJEMPLO3_2.c|EJEMPLO3_2_mod.c|EJEMPLO2_5_1819.c|EJEMPLO2_4_2021.c|EJEMPLO2_3_1819.c|EJEMPLO2_2_1819.c|EJEMPLO2_1819.c" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name=""/>
 					</sourceEntries>
 				</configuration>
 			</storageModule>

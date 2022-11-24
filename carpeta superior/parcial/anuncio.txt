@@ -1,0 +1,9 @@
+ Parcialito de teoría de microcontroladores
+
+Publicado el: miércoles 26 de octubre de 2022 11H11' CEST
+
+Tal como se decidió ayer en clase, el parcialito correspondiente a la teoría de microcontroladores se hará el LUNES 7 de NOVIEMBRE (con horario de martes), de 12:10 a 12:30 aproximadamente. Es de vital importancia que ese día esté todo el mundo en clase, sentado, a las 12:10. Dado que son aproximadamente 40 alumnos, sitúense en el aula 3 en cada mesa (uno en cada extremo y uno en el centro). 
+
+El contenido del parcialito será, fundamentalmente, de los temas 1, 2,  9 y 10, aunque también puede entrar algo de los temas 6, 7 y 8. Pueden ver exámenes de años anteriores en la web para tener una idea general de cómo será el examen, aunque debido a los cambios de temario pueden aparecer o desaparecer algunos temas.
+
+Este examen contará como un 15% de la nota de la Parte 1, siendo las prácticas un 45% y el trabajo de microcontrolador el otro 40%. Para aprobar la asignatura se exige un mínimo en cada parte, pero en el caso de la "teoría de microcontroladores" se entiende que la parte es el parcialito más el trabajo. Quiere esto decir que no hay mínimo como tal en el parcialito.

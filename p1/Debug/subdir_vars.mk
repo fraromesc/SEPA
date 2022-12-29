@@ -9,30 +9,30 @@ CMD_SRCS += \
 ../tm4c1294ncpdt.cmd 
 
 LIB_SRCS += \
-C:/Users/jwyx/Documents/TARDIS/SAVE/gierm/sepa/SEPA/TivaWare_C_Series-2.1.3.156/driverlib/ccs/Debug/driverlib.lib 
+C:/Users/fraromesc/Documents/TARDIS1/SAVE/gierm/sepa/SEPA/TivaWare_C_Series-2.1.3.156/driverlib/ccs/Debug/driverlib.lib 
 
 C_SRCS += \
-../ejercicio2.c \
+../ejercicio1.c \
 ../tm4c1294ncpdt_startup_ccs.c 
 
 C_DEPS += \
-./ejercicio2.d \
+./ejercicio1.d \
 ./tm4c1294ncpdt_startup_ccs.d 
 
 OBJS += \
-./ejercicio2.obj \
+./ejercicio1.obj \
 ./tm4c1294ncpdt_startup_ccs.obj 
 
 OBJS__QUOTED += \
-"ejercicio2.obj" \
+"ejercicio1.obj" \
 "tm4c1294ncpdt_startup_ccs.obj" 
 
 C_DEPS__QUOTED += \
-"ejercicio2.d" \
+"ejercicio1.d" \
 "tm4c1294ncpdt_startup_ccs.d" 
 
 C_SRCS__QUOTED += \
-"../ejercicio2.c" \
+"../ejercicio1.c" \
 "../tm4c1294ncpdt_startup_ccs.c" 
 
 
